@@ -1,5 +1,12 @@
 import click
+from .GithubLogin import login as login_command
+from .GithubLogout import logout as logout_command
 
-@click.command()
+
+@click.group()
 def cli():
-    click.echo('Hello,World!')
+    pass
+
+cli.add_command(login_command.login)
+cli.add_command(logout_command.logout)
+
