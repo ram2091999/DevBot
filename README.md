@@ -1,5 +1,5 @@
 # DevBot
-Devbot is a CLI to make development faster. It lets you manage multiple projects by having a seperate to-do list for each one and it is also integerated with github which allows you to push the to-do list that you created to GitHub.
+Devbot is a CLI to make development faster. It lets you manage multiple projects by having a separate to-do list for each one and it is also integrated with github which allows you to push the to-do list that you created to GitHub.
 
 ### Currently available commands
 
