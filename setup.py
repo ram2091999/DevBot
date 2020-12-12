@@ -1,4 +1,5 @@
-from setuptools import setup,find_packages
+from setuptools import setup, find_packages
+
 
 def read_requirements():
     with open('requirements.txt') as req:
@@ -6,14 +7,15 @@ def read_requirements():
         requirements = content.split('\n')
     return requirements
 
+
 setup(
-    name = 'devbot',
-    version = '0.1',
-    packages = find_packages(),
-    include_package_data = True,
-    install_requires = read_requirements(),
-    entry_points = '''
+    name='devbot',
+    version='0.1',
+    packages=find_packages(),
+    include_package_data=True,
+    install_requires=read_requirements(),
+    entry_points='''
       [console_scripts]
-      devbot = DevBot.cli:cli
+      devbot = devbot.cli:cli
      '''
 )
